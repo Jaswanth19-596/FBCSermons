@@ -21,7 +21,7 @@ function App() {
   const [sermons, setSermons] = useState<Sermon[]>([]);
   const [topics, setTopics] = useState<Topic[]>([]);
   const [sermonSeries, setSermonSeries] = useState<SermonSeries[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [_, setIsLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
   const [selectedSeries, setSelectedSeries] = useState<string | null>(null);
@@ -167,7 +167,7 @@ function App() {
           </div>
           
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: 'var(--font-heading)' }}>
-            Discover God's Word
+            HEAR GOD’S WORD • FEEL GOD’S LOVE • EXALT GOD’S SON
           </h2>
           <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-8">
             Explore our archive of sermons, find messages that speak to your season, and grow deeper in your faith journey.

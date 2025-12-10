@@ -93,8 +93,8 @@ export function SermonCard({ sermon }: SermonCardProps) {
           {sermon.title}
         </h3>
 
-        {/* Preview text on hover */}
-        <p className={`text-sm text-gray-600 mb-3 transition-all duration-300 ${isHovered ? 'line-clamp-2 opacity-100' : 'line-clamp-1 opacity-70'}`}>
+        {/* Preview text - fixed 2 lines to prevent height jumping */}
+        <p className="text-sm text-gray-600 mb-3 line-clamp-2 transition-opacity duration-300 group-hover:opacity-100 opacity-70">
           {sermon.summary}
         </p>
 
